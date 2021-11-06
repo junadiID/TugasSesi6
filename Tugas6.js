@@ -24,20 +24,19 @@ let dataSiswa = [
 
 let program = []
 let data = []
-let text1 = "'Lulus Programming :'"
-let text2 = "'Lulus Database :'"
+let text1 = "'Lulus Programming' :"
+let text2 = "'Lulus Database' :"
 for (let i=0; i<dataSiswa.length; i++){
     let value1 = dataSiswa[i].nilai["Programming"];
     let value2 = dataSiswa[i].nilai["Database"];
     
-    if (value1 > 70) {
+    if (value1 >= 70) {
         program.push(dataSiswa[i].nama)
-    }else if (value2 = 70) {
+    };
+    
+    if (value2 >= 70) {
         data.push(dataSiswa[i].nama)
-    }
-    else{
-      
-    }
+    };
 }
 
 
